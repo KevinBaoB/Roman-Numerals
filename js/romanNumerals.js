@@ -5,7 +5,7 @@ function toRoman(num) {
     1: "I",
     4: "IV",
     5: "V",
-    14: "XIV",
+    // 14: "XIV",
     44: "XLIV",
     9: "IX",
     10: "X",
@@ -16,7 +16,7 @@ function toRoman(num) {
     1000: "M",
   };
 
-  let arr = [1000, 944, 500, 100, 50, 44, 14, 10, 9, 5, 4, 1];
+  let arr = [1000, 944, 500, 100, 50, 44, 10, 9, 5, 4, 1];
   let roman = "";
   //   let sum = 0;
 
@@ -25,16 +25,10 @@ function toRoman(num) {
       roman += list[arr[i]];
       num -= arr[i];
     }
-
-    // while (num >= +i) {
-    //   console.log(num);
-    //   roman += list[i];
-    //   num -= +i;
-    // }
   }
   return roman;
 }
 
 // console.log(toRoman(1));
 // console.log(toRoman(3));
-console.log(toRoman(12));
+console.log(toRoman(500));
